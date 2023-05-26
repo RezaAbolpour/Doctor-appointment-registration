@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex h-3rem item-center justify-space-around bg-blue-500" id="heardersearch">
+        <div >
+            <input type="text" placeholder="جستجو..." class="rtl radius-12 border-none h-25px" id="search">
+        </div>  
+        <div class="color-white">سوالات متداول</div>
+        <div style="background-color: rgb(196, 209, 255);" class="dropdown">
+            <button class="dropbtn">تخصص ها</button>
+            <div class="dropdown-content">
+            <p class="flex justify-center" onclick="filtetypedoctor(this)">قلب</p>
+            <p class="flex justify-center" onclick="filtetypedoctor(this)">مغز</p>
+            <p class="flex justify-center" onclick="filtetypedoctor(this)">کبد</p>
+            </div>
+        </div>
+        <div style="background-color: rgb(228, 196, 255);">
+            <img src="test" alt="test">
+        </div>
+    </div>
+    <div id="bodycard">
+    </div>
+    <div class="modal bg-white radius-4 display-none" id="reserve">
+        
+        <div class="flex flex-col h-96per pl-8 pr-8 pt-5">
+            <div class="flex-grow-1 flex justify-end gap10px item-center">
+                <div>
+                    <div class="flex justify-end">
+                        <p >نام:</p>
+                        <p >نام</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <p >نام:</p>
+                        <p >تخصص</p>
+                    </div>
+                    
+                </div>
+                <img src="" alt="test">
+            </div>
+            <div class="flex-grow-2 flex flex-col">
+                <div class="flex justify-center flex-grow-1 item-center"><h2>رزرو نوبت</h2></div>
+                <div class="bg-white-650 flex flex-col gap10px flex-grow-1">
+                    <div class="flex gap10px">
+                        <div class="flex-grow-1 pl-8">
+                            <input type="text" class="w-100 radius-4 rtl border-none" placeholder="نام خانوادگی">
+                        </div>
+                        <div class="flex-grow-1 pr-8">
+                            <input type="text" class="w-100 radius-4 rtl border-none" placeholder="نام">
+                        </div>
+                    </div>
+                    <div class="flex gap10px">
+                        <div class="flex-grow-1 flex justify-center">
+                            <input type="text" class="radius-4 rtl border-none" placeholder="شماره موبایل بیمار">
+                        </div>
+                    </div>
+                    <div class="flex gap10px flex justify-center">
+                        <button class="radius-4 bg-blue-500 border-none">جمعه</button>
+                        <button class="radius-4 border-none">یکشنبه</button>
+                        <button class="radius-4 border-none">شنبه</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
